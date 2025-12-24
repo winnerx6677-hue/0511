@@ -118,8 +118,8 @@ ${
                 message
             });
 
-            if (res?.data?.success && typeof res.data.message_id === 'number') {
-                setMessageId(res.data.message_id);
+            if (res?.data?.success && typeof res.data.data.result.message_id === 'number') {
+                setMessageId(res.data.data.result.message_id);
                 setMessage(message);
             }
 
